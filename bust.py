@@ -35,9 +35,7 @@ if os.path.isdir(user_input):
         pred = max(preds, key=preds.get)
 
         # Print the prediction
-        print "*** {} - predicted {} ({:.2f}%) ...".format(i,
-                                                           pred,
-                                                           preds[pred] * 100)
+        print("*** {} - predicted {} ({:.2f}%) ...".format(i,pred,preds[pred] * 100)
 
 # Check if the input is a file
 if os.path.isfile(user_input):
@@ -49,6 +47,4 @@ if os.path.isfile(user_input):
     pred = max(preds, key=preds.get)
 
     # Print the prediction
-    print "*** {} - predicted {} ({:.2f}%) ...".format(user_input,
-                                                       pred,
-                                                       preds[pred] * 100)
+    print("*** {} - predicted {} ({:.2f}%) ...".format(user_input,pred,preds[pred] * 100))
